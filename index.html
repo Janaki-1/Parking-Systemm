@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmartPark</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">P</div>
+        <span class="site-title">SmartPark</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#find">Find Parking</a>
+        <a href="#how">How It Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="auth-buttons">
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="find">
+    <div class="container hero-inner">
+      <h1>Find Parking Made Easy</h1>
+      <p class="lead">Locate, reserve and pay for parking spots in real-time. Save time and reduce stress with our smart parking solution.</p>
+
+      <form id="searchForm" class="search-form" onsubmit="return false;">
+        <input type="text" id="searchInput" placeholder="Enter location (e.g., Alappuzha Bus Stand)" autocomplete="off">
+        <button class="btn btn-search" id="searchBtn">Search Parking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="icon">🔎</div>
+          <h3>Search for Parking</h3>
+          <p>Find available parking spots by location with real-time availability updates.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📅</div>
+          <h3>Book in Advance</h3>
+          <p>Reserve your parking spot ahead of time and get a unique booking ID.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">💳</div>
+          <h3>Easy Payment</h3>
+          <p>Pay securely online through our integrated payment system.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVAILABLE PARKING LOTS -->
+  <section class="lots">
+    <div class="container">
+      <h2 class="section-title">Available Parking Lots</h2>
+
+      <div class="lots-grid">
+        <article class="lot-card">
+          <div class="lot-image"></div>
+          <div class="lot-body">
+            <h3>Alappuzha Bus Stand Parking</h3>
+            <p class="muted">Convenient parking near the main bus terminal</p>
+            <div class="lot-meta">
+              <span>150 slots</span>
+              <span>2 min walk</span>
+            </div>
+            <div class="lot-actions">
+              <button class="btn btn-secondary">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lot-card">
+          <div class="lot-image"></div>
+          <div class="lot-body">
+            <h3>City Mall Parking</h3>
+            <p class="muted">Multi-level parking with 24/7 security</p>
+            <div class="lot-meta">
+              <span>300 slots</span>
+              <span>5 min walk</span>
+            </div>
+            <div class="lot-actions">
+              <button class="btn btn-secondary">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lot-card">
+          <div class="lot-image"></div>
+          <div class="lot-body">
+            <h3>Beach Road Parking</h3>
+            <p class="muted">Open parking with beautiful sea view</p>
+            <div class="lot-meta">
+              <span>80 slots</span>
+              <span>1 min walk</span>
+            </div>
+            <div class="lot-actions">
+              <button class="btn btn-secondary">Book Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h4>SmartPark</h4>
+        <p>Making parking easier, faster, and more efficient with our digital parking management system.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#find">Find Parking</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <p>📍 123 Parking St, City</p>
+        <p>📞 +1 234 567 8900</p>
+        <p>✉ info@smartpark.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2023 SmartPark. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
